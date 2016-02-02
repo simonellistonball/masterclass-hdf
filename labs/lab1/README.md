@@ -27,6 +27,8 @@ configure it
 1. Now connect up the output of our UpdateAttributes processor to the new CompressContent
 1. Add a PutFile processor
 1. Configure the destination location in the PutFile processor properties. Note the conflict resolution strategy, and set this to replace.
+1. Setup the connection between the CompressContent processor and the PutFile processor (only for the success relation!)
+
 1. Set both success and failure relationships to auto-terminate in the settings tab
 
 Now you have you first complete flow, press play at the top of the screen (make sure you don't have a processor selected)
