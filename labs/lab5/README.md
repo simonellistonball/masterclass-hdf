@@ -14,4 +14,6 @@ Now setup the instance in the shell.
 1. Create a remote process group.
 1. Enter the URL of your remote NiFi cluster
 
-You can then Enable Transmission on this remote process group. It behaves just like a regular process group, and you can wire up a Flow to the input port. 
+You can then Enable Transmission on this remote process group. It behaves just like a regular process group, and you can wire up a Flow to the input port.
+
+This will send flow files to the remote cluster as if it were a local process group.
