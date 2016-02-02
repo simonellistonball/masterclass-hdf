@@ -39,3 +39,7 @@ Go back to your HDP cluster, with the PutHDFS piece. Let's push the individual l
 1. Run the PutKafka processor
 
 Test this by pushing files into your flow input folder. Lines appear one by one in Kafka, and as a block in HDFS.
+
+To see the files in Kafka,
+   run /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test
+on your kafka box. 
