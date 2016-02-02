@@ -10,9 +10,11 @@ Now setup the instance in the shell.
 1. Set nifi.remote.input.secure=false
 1. Restart the nifi service (/opt/nifi-1.1.1.0-12/bin/nifi.sh restart, or via Ambari)
 
+Ensure you have an input port in the root canvas of your core hadoop nifi instance.
+
 1. On your single nifi node, setup a file collection flow, or use the one you already have.
 1. Create a remote process group.
-1. Enter the URL of your remote NiFi cluster
+1. Enter the URL of your remote NiFi cluster (as you would connect in a browser - http://ip_address:9090/nifi, note this is not the port for the remote site-to-site socket configured above)
 
 You can then Enable Transmission on this remote process group. It behaves just like a regular process group, and you can wire up a Flow to the input port.
 
