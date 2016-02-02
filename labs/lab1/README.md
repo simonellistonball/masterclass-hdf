@@ -32,3 +32,5 @@ configure it
 1. Set both success and failure relationships to auto-terminate in the settings tab
 
 Now you have you first complete flow, press play at the top of the screen (make sure you don't have a processor selected)
+
+If you copy a file (for example /var/log/ambari-agent/ambari-agent.log) to the input folder you chose, NiFi will pick it up a compress it into the output directory you chose. Take a minute to verify this behaviour.
