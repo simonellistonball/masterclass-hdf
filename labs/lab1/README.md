@@ -1,6 +1,4 @@
-#HDF Masterclass
-
-##Lab 1: Building a basic flow
+#Lab 1: Building a basic flow
 
 Starting with a blank NiFi canvas.
 
