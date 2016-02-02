@@ -1,4 +1,4 @@
-# Lab 4: Remote Clusters
+# Lab 5: Remote Clusters
 
 1. On your HDP cluster, setup an input port in the root canvas
 1. Wire this up to the HDFS Ingest group.
