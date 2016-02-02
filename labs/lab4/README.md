@@ -31,6 +31,7 @@ Investigate the many ingest options!
 
 #Egress options
 Go back to your HDP cluster, with the PutHDFS piece. Let's push the individual lines into Kafka
+
 1. Add a PutKafka processor.
 1. Configure the broker list property to point to localhost:6667, and the topic 'test'
 
