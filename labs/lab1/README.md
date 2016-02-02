@@ -10,7 +10,7 @@ Starting with a blank NiFi canvas.
   1. Select "Configure"
   1. The tabbed dialog should show settings, give the processor a name
   1. Select the properties tab
-  1. Input "/tmp/input" (make sure you create this directory on your NiFi box)
+  1. Input "/tmp/input" (make sure you create this directory on your NiFi box, and that it is owned by the nifi user - chown -R nifi:nifi /tmp/input)
 1. Now add an UpdateAttribute processor
   1. Configure it with a new dynamic property
     1. In the properties tab, press the plus sign in the top right of the dialog
@@ -26,7 +26,7 @@ Starting with a blank NiFi canvas.
 configure it
 1. Now connect up the output of our UpdateAttributes processor to the new CompressContent
 1. Add a PutFile processor
-1. Configure the destination location in the PutFile processor properties. Note the conflict resolution strategy, and set this to replace.
+1. Configure the destination location in the PutFile processor properties. Note the conflict resolution strategy, and set this to replace. (nifi will create this directory for you)
 1. Setup the connection between the CompressContent processor and the PutFile processor (only for the success relation!)
 
 1. Set both success and failure relationships to auto-terminate in the settings tab
