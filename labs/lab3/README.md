@@ -25,7 +25,7 @@ Now in the new blank canvas:
 1. Add an UpdateAttribute to change the filename
 1. Add CompressContent, use bzip2
 1. Add PutHdfs
-  1. Configure the properties to point to the hadoop config files (/etc/hadoop/core-site.xml,/etc/hadoop/hdfs-site.xml)
+  1. Configure the properties to point to the hadoop config files (/etc/hadoop/conf/core-site.xml,/etc/hadoop/conf/hdfs-site.xml)
   1. Set a directory (and make sure it exists of HDFS and the nifi user has permissions, /tmp is a good place for now)
 
 1. Add and output port.

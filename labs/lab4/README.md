@@ -1,17 +1,17 @@
 # Lab 4: External Sources
 
-Let's looks at some external data sourcse
+Let's looks at some external data sources
 
 1. Create a ListenHTTP processor
-  1. Set the listening port to 8188
-  1. Set the base path to /hello
+  1. Set the listening port to 9091
+  1. Set the base path to "hello"
 
 This is a web listener
 
 1. Feed this into a PutFile processor.
 
 Use curl to send data to this:
-curl -d"data" -X POST http://hostname:8188/hello
+curl -d"data" -X POST http://hostname:9091/hello
 
 You will see this in your flow.
 
