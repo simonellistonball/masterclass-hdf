@@ -19,6 +19,7 @@ Let's also look at the syslog listener
 
 1. Create a ListenSyslog processor.
   1. Note the batching options here.
+  1. NiFi is running as a non-privileged user, so you will not be able to use the default port (514) try 1514 instead, and point syslog to this instead.
 1. Push this to a PutFile.
 
 A common pattern is the List, Fetch patter.
@@ -42,4 +43,4 @@ Test this by pushing files into your flow input folder. Lines appear one by one 
 
 To see the files in Kafka,
    run /usr/hdp/current/kafka-broker/bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test
-on your kafka box. 
+on your kafka box.
