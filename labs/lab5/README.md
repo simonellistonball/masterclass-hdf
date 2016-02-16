@@ -18,4 +18,6 @@ Ensure you have an input port in the root canvas of your core hadoop nifi instan
 
 You can then Enable Transmission on this remote process group. It behaves just like a regular process group, and you can wire up a Flow to the input port.
 
+Note that for data to flow, you will need to right click on the remote process group, and select Remote Ports. This will allow you to turn the ports on.  
+
 This will send flow files to the remote cluster as if it were a local process group.
