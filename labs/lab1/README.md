@@ -10,7 +10,7 @@ Starting with a blank NiFi canvas.
   1. Select "Configure"
   1. The tabbed dialog should show settings, give the processor a name
   1. Select the properties tab
-  1. Input "/tmp/input" (make sure you create this directory on your NiFi box, and that it is owned by the nifi user - chown -R nifi:nifi /tmp/input)
+  1. Input "/tmp/input" (before doing this use "sudo su -u nifi" to become the nifi user, and make sure you create this directory on your NiFi box, and that it is owned by the nifi user - chown -R nifi:nifi /tmp/input)
 1. Now add an UpdateAttribute processor
   1. Configure it with a new dynamic property
     1. In the properties tab, press the plus sign in the top right of the dialog
@@ -22,7 +22,7 @@ Starting with a blank NiFi canvas.
   1. This brings up the connection configuration dialog
     1. For now just leave this on defaults.
 1. Add a CompressContent processor and look at its properties, the defaults should work fine here.
-1. On settings, make sure you set "Autoterminate relationships" on for failure
+1. On settings, make sure you set "Auto-terminate relationships" on for failure
 configure it
 1. Now connect up the output of our UpdateAttributes processor to the new CompressContent
 1. Add a PutFile processor
