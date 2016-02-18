@@ -20,7 +20,10 @@ Let's also look at the syslog listener
 1. Create a ListenSyslog processor.
   1. Note the batching options here.
   1. NiFi is running as a non-privileged user, so you will not be able to use the default port (514) try 1514 instead, and point syslog to this instead.
-1. Push this to a PutFile.
+1. Push this to a PutFile
+  1. Warning: By default, each new log record (row) will write to a new file
+1. (optional) Update & restart rsyslog to forward all logs to NiFi
+  1. `echo '*.* @localhost:1514' | sudo tee -a /etc/rsyslog.conf ; sudo service rsyslog restart`
 
 A common pattern is the List, Fetch patter.
 
